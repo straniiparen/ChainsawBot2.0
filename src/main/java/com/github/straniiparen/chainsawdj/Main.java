@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Path tokenFile = Paths.get(System.getProperty("user.dir") + "/token.txt");
         try {
-            System.out.println(System.getProperty("user.dir"));
+            System.out.println("Place token.txt in " + System.getProperty("user.dir"));
             String token = Files.readString(tokenFile).trim();
             new ChainsawDJ(token);
         } catch (Exception e) {
